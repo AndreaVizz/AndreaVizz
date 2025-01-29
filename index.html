@@ -66,9 +66,16 @@
             color: #2c3e50; /* Colore del titolo nero */
             margin-bottom: 20px;
             text-align: center;
-            white-space: nowrap; /* Impedisce che il testo vada a capo */
-            overflow: hidden;
-            text-overflow: ellipsis;
+            white-space: normal; /* Consente il ritorno a capo se necessario */
+            word-wrap: break-word; /* La parola può andare su più righe */
+            padding: 20px;
+            background-color: #ecf0f1; /* Colore di sfondo per il cerchio */
+            border-radius: 50%; /* Rende il titolo a forma di cerchio */
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            text-align: center;
+            line-height: 1.2;
         }
 
         h2 {
@@ -122,10 +129,9 @@
             }
 
             h1 {
-                font-size: 20px; /* Ridurre la dimensione del titolo sui dispositivi mobili */
-                white-space: nowrap; /* Impedisce il ritorno a capo del titolo */
+                font-size: 24px; /* Ridurre la dimensione del titolo sui dispositivi mobili */
                 text-align: center;
-                word-wrap: normal; /* Impedisce il ritorno a capo, mantiene il testo su una sola riga */
+                padding: 15px;
             }
 
             h2 {
