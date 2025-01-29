@@ -5,42 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum di Andrea Vizzarri</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            color: #333;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
         h1 {
             text-align: center;
-            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2d3e50;
         }
+
+        h2 {
+            font-size: 24px;
+            color: #2d3e50;
+            margin-bottom: 10px;
+        }
+
         .section {
-            margin-top: 20px;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
-            color: #444;
-        }
+
         .section ul {
             list-style-type: none;
             padding-left: 0;
         }
+
         .section li {
             margin-bottom: 10px;
         }
-        .contact-info, .education, .skills {
-            margin-top: 20px;
+
+        .section li a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .section li a:hover {
+            color: #2980b9;
+        }
+
+        .contact-info ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact-info li {
+            width: 48%;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skills li {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            width: 48%;
+            text-align: center;
+        }
+
+        .skills li:hover {
+            background-color: #dfe6e9;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #7f8c8d;
         }
     </style>
 </head>
 <body>
+
     <h1>Curriculum Vitae di Andrea Vizzarri</h1>
 
     <div class="contact-info section">
         <h2>Contatti</h2>
         <ul>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/andrea-vizzarri-2591ba2bb/" target="_blank">Andrea Vizzarri</a></li>
-            <li>GitHub: <a href="https://github.com/AndreaVizz" target="_blank">AndreaVizz</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/andrea-vizzarri-2591ba2bb/" target="_blank">Andrea Vizzarri</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/AndreaVizz" target="_blank">AndreaVizz</a></li>
         </ul>
     </div>
 
@@ -60,5 +123,10 @@
             <li>Manutenzione impianti elettrici</li>
         </ul>
     </div>
+
+    <div class="footer">
+        <p>Pagina realizzata con <3 da Andrea Vizzarri</p>
+    </div>
+
 </body>
 </html>
