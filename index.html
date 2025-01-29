@@ -66,6 +66,9 @@
             color: #2c3e50; /* Colore del titolo nero */
             margin-bottom: 20px;
             text-align: center;
+            white-space: nowrap; /* Impedisce che il testo vada a capo */
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         h2 {
@@ -119,7 +122,9 @@
             }
 
             h1 {
-                font-size: 28px;
+                font-size: 28px; /* Ridurre la dimensione del titolo sui dispositivi mobili */
+                white-space: normal; /* Consente il testo su più righe su schermi più piccoli */
+                word-wrap: break-word;
             }
 
             h2 {
