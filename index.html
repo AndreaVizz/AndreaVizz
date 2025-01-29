@@ -17,6 +17,38 @@
             color: #333;
             line-height: 1.6;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-section {
+            width: 30%;
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-section img {
+            width: 80%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .content-section {
+            width: 70%;
+            padding: 20px;
         }
 
         h1 {
@@ -34,10 +66,6 @@
 
         .section {
             margin-top: 30px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .section ul {
@@ -59,34 +87,6 @@
             color: #2980b9;
         }
 
-        .contact-info ul {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .contact-info li {
-            width: 48%;
-        }
-
-        .skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .skills li {
-            background-color: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
-            width: 48%;
-            text-align: center;
-        }
-
-        .skills li:hover {
-            background-color: #dfe6e9;
-        }
-
         .footer {
             text-align: center;
             margin-top: 40px;
@@ -97,35 +97,46 @@
 </head>
 <body>
 
-    <h1>Curriculum Vitae di Andrea Vizzarri</h1>
+    <div class="container">
+        <!-- Sezione immagine -->
+        <div class="image-section">
+            <img src="https://via.placeholder.com/150" alt="Immagine Andrea Vizzarri">
+            <h3>Andrea Vizzarri</h3>
+        </div>
 
-    <div class="contact-info section">
-        <h2>Contatti</h2>
-        <ul>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/andrea-vizzarri-2591ba2bb/" target="_blank">Andrea Vizzarri</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/AndreaVizz" target="_blank">AndreaVizz</a></li>
-        </ul>
-    </div>
+        <!-- Sezione contenuti -->
+        <div class="content-section">
+            <h1>Curriculum Vitae di Andrea Vizzarri</h1>
 
-    <div class="education section">
-        <h2>Formazione</h2>
-        <ul>
-            <li><strong>Diploma di Manutenzione e Assistenza Tecnica</strong>, Istituto Professionale "Algeri Marino", Casoli (Giugno 2024)</li>
-            <li><strong>Corso di Informatica e Cybersecurity</strong>, In corso</li>
-        </ul>
-    </div>
+            <div class="contact-info section">
+                <h2>Contatti</h2>
+                <ul>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/andrea-vizzarri-2591ba2bb/" target="_blank">Andrea Vizzarri</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/AndreaVizz" target="_blank">AndreaVizz</a></li>
+                </ul>
+            </div>
 
-    <div class="skills section">
-        <h2>Competenze</h2>
-        <ul>
-            <li>Informatica (ECDL-Base)</li>
-            <li>Programmazione (Python)</li>
-            <li>Manutenzione impianti elettrici</li>
-        </ul>
+            <div class="education section">
+                <h2>Formazione</h2>
+                <ul>
+                    <li><strong>Diploma di Manutenzione e Assistenza Tecnica</strong>, Istituto Professionale "Algeri Marino", Casoli (Giugno 2024)</li>
+                    <li><strong>Corso di Informatica e Cybersecurity</strong>, In corso</li>
+                </ul>
+            </div>
+
+            <div class="skills section">
+                <h2>Competenze</h2>
+                <ul>
+                    <li>Informatica (ECDL-Base)</li>
+                    <li>Programmazione (Python)</li>
+                    <li>Manutenzione impianti elettrici</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
-        <p>Pagina realizzata con da Andrea Vizzarri</p>
+        <p>Pagina realizzata con <3 da Andrea Vizzarri</p>
     </div>
 
 </body>
