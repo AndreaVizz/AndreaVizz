@@ -66,8 +66,9 @@
             color: #2c3e50; /* Colore del titolo nero */
             margin-bottom: 20px;
             text-align: center;
-            white-space: normal; /* Consente il ritorno a capo se necessario */
-            word-wrap: break-word; /* La parola può andare su più righe */
+            white-space: nowrap; /* Impedisce che il testo vada a capo */
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         h2 {
@@ -121,8 +122,10 @@
             }
 
             h1 {
-                font-size: 24px; /* Ridurre ulteriormente la dimensione del titolo sui dispositivi mobili */
+                font-size: 20px; /* Ridurre la dimensione del titolo sui dispositivi mobili */
+                white-space: nowrap; /* Impedisce il ritorno a capo del titolo */
                 text-align: center;
+                word-wrap: normal; /* Impedisce il ritorno a capo, mantiene il testo su una sola riga */
             }
 
             h2 {
