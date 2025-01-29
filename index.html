@@ -93,6 +93,33 @@
             font-size: 14px;
             color: #7f8c8d;
         }
+
+        /* Media Queries per dispositivi mobili */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-section {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .content-section {
+                width: 100%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -100,7 +127,7 @@
     <div class="container">
         <!-- Sezione immagine -->
         <div class="image-section">
-            <img src="immaginecurriculum.jpg" alt="Immagine Andrea Vizzarri">
+            <img src="https://via.placeholder.com/150" alt="Immagine Andrea Vizzarri">
             <h3>Andrea Vizzarri</h3>
         </div>
 
@@ -136,7 +163,7 @@
     </div>
 
     <div class="footer">
-        <p>Pagina realizzata da Andrea Vizzarri</p>
+        <p>Pagina realizzata con <3 da Andrea Vizzarri</p>
     </div>
 
 </body>
